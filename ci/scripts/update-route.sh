@@ -3,7 +3,7 @@
 set -xe
 
 # Login to PCF
-cf api $CF_API --skip-ssl-validation
+cf api $CF_API
 
 # Don't echo password
 set +x
