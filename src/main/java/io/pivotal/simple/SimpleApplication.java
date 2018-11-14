@@ -23,7 +23,7 @@ public class SimpleApplication {
 	{
 		logger.info("Great Platform to run your Cloud Native Apps");
 		
-		return "Great Platform to run your Cloud Native Apps - BLUE.";
+		return "Great Platform to run your Cloud Native Apps - GREEN.";
 	}
 	
 	
