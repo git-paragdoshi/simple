@@ -4,7 +4,7 @@
 set -xe
 
 # Login to PCF
-cf api $CF_API --skip-ssl-validation
+cf api $CF_API
 
 # Don't echo password
 set +x
@@ -30,9 +30,6 @@ APP_NAME=$CURR_APP_COLOUR
 
 echo APP_NAME = $APP_NAME
 
-# Get list of services
-echo $(echo $(cf services | grep $APP_NAME | awk '{print $1}')|sed 's/ /, /g') > ./app-info/services.txt
-echo Services: $(cat ./app-info/services.txt)
 
 # Get app scale
 echo $(cf app $APP_NAME | grep instances: | awk '{print $2}' | awk -F/ '{print $2}') > ./app-info/scale.txt
