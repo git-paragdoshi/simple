@@ -23,20 +23,6 @@ public class SimpleApplication {
 	{
 		logger.info("Great Platform to run your Cloud Native Apps");
 		
-	/*	String pcf;
-		File resource;
-		try {
-			resource = new ClassPathResource("pcf.txt").getFile();
-			
-			 pcf = new String(Files.readAllBytes(resource.toPath()));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			pcf = "NFS Error";
-		}
-		
-			   
-		return pcf;*/
 		return "Great Platform to run your Cloud Native Apps - GREEN.";
 	}
 	
