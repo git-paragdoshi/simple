@@ -21,7 +21,7 @@ resources:
     password: ((pcf-password))
     organization: ((pcf-org))
     space: ((pcf-space))
-    skip_cert_check: false
+    skip_cert_check: true
     
 jobs:
 - name: build-artifact
@@ -67,7 +67,7 @@ jobs:
     params:
       manifest: manifest-output/manifest.yml
       environment_variables:
-        CF_DIAL_TIMEOUT: 15
+        CF_DIAL_TIMEOUT: "30"
 
 - name: integration-test
   serial: true
