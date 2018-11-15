@@ -66,8 +66,6 @@ jobs:
   - put: PCF
     params:
       manifest: manifest-output/manifest.yml
-      environment_variables:
-        CF_DIAL_TIMEOUT: "30"
 
 - name: integration-test
   serial: true
